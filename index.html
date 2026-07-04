@@ -1,1 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
+    <title>MoodScan AI</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <section class="app">
+        <div class="glass-card">
+            <div class="top-section">
+                <div class="logo">
+                    <i class="fa-solid fa-brain"></i>
+                </div>
+                <h1>
+                    MoodScan
+                    <span>AI</span>
+                </h1>
+                <p>
+                    Futuristic Emotion Detection System
+                </p>
+            </div>
+            <div class="status-bar">
+                <div class="status-dot"></div>
+                <span id="statusText">
+                    AI Ready
+                </span>
+            </div>
+            <div class="scanner-box">
+                <div class="ring ring1"></div>
+                <div class="ring ring2"></div>
+                <div class="ring ring3"></div>
+                <div class="fingerprint-area"
+                    id="fingerArea">
+                    <div class="scan-light"></div>
+                    <i class="fa-solid fa-fingerprint fingerprint"></i>
+                </div>
+            </div>
+            <div class="instruction">
+                <p>
+                    Place your finger on the scanner
+                    to allow MoodScan AI to detect
+                    your emotional state.
+                </p>
+            </div>
+            <div class="btn-area">
+                <button id="scanBtn">
+                    <i class="fa-solid fa-bolt"></i>
+                    Start Scan
+                </button>
+            </div>
+            <div class="progress-section">
+                <div class="progress-info">
+                    <span>
+                        Scan Progress
+                    </span>
+                    <span id="percent">
+                        0%
+                    </span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill"
+                    id="progressFill"></div>
+                </div>
+            </div>
+            <div class="analysis-panel">
+                <div class="analysis-title">
+                    <i class="fa-solid fa-microchip"></i>
+                    <h2>AI Neural Analysis</h2>
+                </div>
+                <div class="analysis-box" id="analysisBox">
+                    Waiting for scan...
+                </div>
+            </div>
+            <div class="result-section" id="resultSection">
+                <div class="result-icon" id="resultIcon">
+                    <i class="fa-solid fa-face-smile"></i>
+                </div>
+                <h2 id="moodName">
+                    Happy
+                </h2>
+                <p id="moodDescription">
+                    Your emotional report will appear here after scanning.
+                </p>
+            </div>
+            <div class="mood-grid">
+                <div class="mood-card">
+                    <i class="fa-solid fa-face-smile"></i>
+                    <h3>Happy</h3>
+                </div>
+                <div class="mood-card">
+                    <i class="fa-solid fa-face-sad-tear"></i>
+                    <h3>Sad</h3>
+                </div>
+                <div class="mood-card">
+                    <i class="fa-solid fa-face-angry"></i>
+                    <h3>Angry</h3>
+                </div>
+                <div class="mood-card">
+                    <i class="fa-solid fa-face-surprise"></i>
+                    <h3>Surprised</h3>
+                </div>
+                <div class="mood-card">
+                    <i class="fa-solid fa-face-meh"></i>
+                    <h3>Neutral</h3>
+                </div>
+                <div class="mood-card">
+                    <i class="fa-solid fa-face-laugh-beam"></i>
+                    <h3>Excited</h3>
+                </div>
+            </div>
+            <div class="history-section">
+                <div class="history-title">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <h2>Recent AI Reports</h2>
+                </div>
+                <ul id="historyList">
+                    <li>No scans yet.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <div class="glow glow1"></div>
+    <div class="glow glow2"></div>
+    <div class="glow glow3"></div>
+    <footer>
+        <p>
+            © 2026 MoodScan AI • Futuristic Glassmorphism UI • Developed with HTML, CSS & JavaScript
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
